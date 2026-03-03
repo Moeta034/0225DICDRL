@@ -4,9 +4,11 @@ A bold, neo-brutalist personal webpage inspired by the [Adelina template](https:
 
 ---
 
-## 🌐 Live Preview
+## 🌐 Live Demo
 
-Open `index.html` in any modern browser to view the page.
+👉 **[https://moeta034.github.io/0225DICDRL/](https://moeta034.github.io/0225DICDRL/)**
+
+Or open `index.html` locally in any modern browser.
 
 ---
 
