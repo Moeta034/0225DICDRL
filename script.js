@@ -81,9 +81,48 @@ function initSmoothScroll() {
 }
 
 // ============================================
-// PARALLAX SUBTLE EFFECT ON HERO
+// HAMBURGER MENU
+// ============================================
+function initHamburger() {
+    const hamburger = document.getElementById('nav-hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    if (!hamburger || !navLinks) return;
+
+    // Toggle menu
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navLinks.classList.toggle('open');
+        document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
+    });
+
+    // Close menu when a nav link is clicked
+    navLinks.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navLinks.classList.remove('open');
+            document.body.style.overflow = '';
+        });
+    });
+
+    // Close menu when clicking outside
+    navLinks.addEventListener('click', (e) => {
+        if (e.target === navLinks) {
+            hamburger.classList.remove('active');
+            navLinks.classList.remove('open');
+            document.body.style.overflow = '';
+        }
+    });
+}
+
+// ============================================
+// PARALLAX SUBTLE EFFECT ON HERO (desktop only)
 // ============================================
 function initParallax() {
+    // Skip parallax on touch devices for performance
+    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+    if (isTouchDevice) return;
+
     const hero = document.getElementById('hero');
     const imageWrapper = document.querySelector('.hero-image-wrapper');
     const stars = document.querySelectorAll('.star');
@@ -123,6 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initScrollReveal();
     initNavScroll();
     initSmoothScroll();
+    initHamburger();
     initParallax();
     initTicker();
 });

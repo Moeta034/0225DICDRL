@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,12 @@
     <title>謝國瑋 — Personal Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;700&family=Caveat:wght@600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;700&family=Caveat:wght@600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Grain overlay -->
     <div class="grain-overlay"></div>
@@ -18,7 +22,12 @@
     <nav id="main-nav">
         <div class="nav-inner">
             <a href="#" class="nav-logo">GW<span class="accent">.</span></a>
-            <div class="nav-links">
+            <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle navigation menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <div class="nav-links" id="nav-links">
                 <a href="#hero" class="nav-link">HOME</a>
                 <a href="#about" class="nav-link">ABOUT</a>
                 <a href="#contact" class="nav-link">CONTACT</a>
@@ -35,7 +44,8 @@
                     <span class="name-line">謝</span>
                     <span class="name-line">國瑋</span>
                 </h1>
-                <p class="hero-subtitle">CREATIVE <span class="script-accent">mind</span> &amp; DIGITAL <span class="script-accent">soul</span></p>
+                <p class="hero-subtitle">CREATIVE <span class="script-accent">mind</span> &amp; DIGITAL <span
+                        class="script-accent">soul</span></p>
                 <div class="hero-time-container">
                     <div class="sticker sticker-time">RIGHT NOW</div>
                     <div class="time-display" id="current-time"></div>
@@ -141,4 +151,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
