@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="謝國瑋 — Personal Portfolio Page. Bold, creative, and modern.">
+    <title>謝國瑋 — Personal Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;700&family=Caveat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Grain overlay -->
+    <div class="grain-overlay"></div>
+
+    <!-- Navigation -->
+    <nav id="main-nav">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo">GW<span class="accent">.</span></a>
+            <div class="nav-links">
+                <a href="#hero" class="nav-link">HOME</a>
+                <a href="#about" class="nav-link">ABOUT</a>
+                <a href="#contact" class="nav-link">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <div class="hero-left">
+                <div class="sticker sticker-hello">HELLO !</div>
+                <h1 class="hero-name">
+                    <span class="name-line">謝</span>
+                    <span class="name-line">國瑋</span>
+                </h1>
+                <p class="hero-subtitle">CREATIVE <span class="script-accent">mind</span> &amp; DIGITAL <span class="script-accent">soul</span></p>
+                <div class="hero-time-container">
+                    <div class="sticker sticker-time">RIGHT NOW</div>
+                    <div class="time-display" id="current-time"></div>
+                    <div class="date-display" id="current-date"></div>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="hero-image-wrapper">
+                    <div class="star star-1">✦</div>
+                    <div class="star star-2">✦</div>
+                    <div class="star star-3">★</div>
+                    <div class="floating-badge">WELCOME</div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>SCROLL DOWN</span>
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </section>
+
+    <!-- Ticker Bar -->
+    <section id="ticker">
+        <div class="ticker-track">
+            <div class="ticker-content">
+                <span>★ 謝國瑋</span>
+                <span>★ CREATIVE</span>
+                <span>★ DIGITAL</span>
+                <span>★ DESIGN</span>
+                <span>★ INNOVATION</span>
+                <span>★ 謝國瑋</span>
+                <span>★ CREATIVE</span>
+                <span>★ DIGITAL</span>
+                <span>★ DESIGN</span>
+                <span>★ INNOVATION</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-container">
+            <div class="about-header">
+                <div class="section-label">ABOUT ME</div>
+                <h2 class="about-title">
+                    I CREATE <span class="script-accent">things</span>
+                    <br>THAT <span class="highlight">MATTER</span>.
+                </h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon">◈</div>
+                    <h3>PASSION</h3>
+                    <p>Driven by curiosity and a relentless pursuit of excellence in every project.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">◉</div>
+                    <h3>VISION</h3>
+                    <p>Seeing the unseen possibilities and transforming ideas into impactful realities.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">◎</div>
+                    <h3>CRAFT</h3>
+                    <p>Meticulous attention to detail, combining aesthetic beauty with functional design.</p>
+                </div>
+            </div>
+            <div class="about-stats">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="∞">∞</div>
+                    <div class="stat-label">POSSIBILITIES</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">CREATIVITY</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">DEDICATION</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact-container">
+            <div class="sticker sticker-contact">LET'S TALK ✦</div>
+            <h2 class="contact-title">
+                SAY <span class="script-accent">hello</span>
+            </h2>
+            <p class="contact-subtitle">Always open for new ideas and collaborations.</p>
+            <a href="mailto:hello@example.com" class="contact-btn" id="contact-btn">GET IN TOUCH →</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-inner">
+            <div class="footer-name">謝國瑋 © <span id="footer-year"></span></div>
+            <div class="footer-tagline">DESIGNED WITH <span class="accent">♥</span></div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
