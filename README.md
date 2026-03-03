@@ -10,6 +10,10 @@ A bold, neo-brutalist personal webpage inspired by the [Adelina template](https:
 
 Or open `index.html` locally in any modern browser.
 
+### Preview
+
+![Homepage Screenshot](screenshot.png)
+
 ---
 
 ## ✨ Features
