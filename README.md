@@ -1,6 +1,6 @@
 # 謝國瑋 — Personal Portfolio Page
 
-A bold, neo-brutalist personal webpage inspired by the [Adelina template](https://builder.hostinger.com/templates?preview=adelina&hideRating=1) from Hostinger. Built with pure HTML, CSS, and JavaScript — no frameworks required.
+A bold, neo-brutalist personal webpage inspired by the [Adelina template](https://builder.hostinger.com/templates?preview=adelina&hideRating=1) from Hostinger. Built with pure HTML, CSS, and JavaScript — no frameworks required. Fully responsive across all devices.
 
 ---
 
@@ -19,11 +19,35 @@ Open `index.html` in any modern browser to view the page.
 | 🔤 **Bold Typography** | Archivo Black for headings, Space Grotesk for body, Caveat for script accents |
 | 🏷️ **Sticker Elements** | Floating badge-style labels ("HELLO!", "RIGHT NOW", "WELCOME") with animations |
 | 📜 **Scrolling Ticker** | Continuous horizontal ticker bar with name and keywords |
-| 🖱️ **Parallax Effect** | Mouse-tracking parallax on the hero section for an interactive feel |
+| 🖱️ **Parallax Effect** | Mouse-tracking parallax on the hero section (desktop only) |
 | 👁️ **Scroll Reveal** | Elements animate into view as the user scrolls down |
-| 📱 **Fully Responsive** | Adapts seamlessly to desktop, tablet, and mobile screens |
+| 📱 **Fully Responsive (RWD)** | 5 breakpoints covering desktop → small phone, plus landscape & reduced-motion support |
+| 🍔 **Hamburger Menu** | Animated ☰ → ✕ toggle with full-screen nav overlay on mobile/tablet |
 | 🌫️ **Grain Texture** | Subtle film-grain overlay for a tactile, print-like aesthetic |
 | ⭐ **Spinning Stars** | Decorative star elements with continuous rotation animations |
+| ♿ **Accessibility** | `prefers-reduced-motion` support and touch-friendly interactions |
+
+---
+
+## 📱 Responsive Web Design (RWD)
+
+The page adapts seamlessly across all screen sizes with **5 breakpoints**:
+
+| Breakpoint | Target Device | Key Adaptations |
+|-----------|---------------|-----------------|
+| **≤1200px** | Large desktop | Fluid padding with `clamp()`, tighter content gaps |
+| **≤968px** | Tablet | Hamburger menu, single-column hero, 2-column about cards, centered layout |
+| **≤768px** | Small tablet | Single-column cards, scaled typography, smaller decorative elements |
+| **≤600px** | Phone | Compact spacing, touch-sized buttons, scaled-down stars & badges |
+| **≤400px** | Small phone | Minimum sizes for very narrow screens |
+
+### Additional RWD Features
+
+- **🍔 Hamburger Menu** — 3-line icon animates to ✕ on open; full-screen blurred overlay; closes on link click or outside tap
+- **👆 Touch Devices** — `@media (hover: none)` swaps hover effects for active/tap states; parallax disabled for performance
+- **📐 Landscape Mode** — `@media (max-height: 500px) and (orientation: landscape)` restores side-by-side layout on rotated phones
+- **♿ Reduced Motion** — `@media (prefers-reduced-motion: reduce)` disables all animations and transitions
+- **📏 Fluid Units** — `clamp()`, `dvh`, and viewport-relative units ensure smooth scaling between breakpoints
 
 ---
 
@@ -32,8 +56,8 @@ Open `index.html` in any modern browser to view the page.
 ```
 L1/
 ├── index.html   # Main HTML structure (hero, ticker, about, contact, footer)
-├── style.css    # All styling — layout, colors, animations, responsive breakpoints
-├── script.js    # Live clock, scroll reveal, parallax, navbar effects, ticker loop
+├── style.css    # All styling — layout, colors, animations, 5 responsive breakpoints
+├── script.js    # Live clock, scroll reveal, parallax, hamburger menu, navbar effects, ticker loop
 └── README.md    # This file
 ```
 
@@ -63,12 +87,12 @@ L1/
 
 ## 🧩 Page Sections
 
-1. **Navigation** — Fixed top bar with blur backdrop, shrinks on scroll
-2. **Hero** — Full-viewport section with name (謝國瑋), subtitle, live clock, and decorative card
-3. **Ticker** — High-contrast white horizontal bar scrolling keywords
-4. **About** — Three feature cards (Passion, Vision, Craft) with hover effects and stat counters
-5. **Contact** — Call-to-action section with gradient background glow
-6. **Footer** — Minimal footer with name and copyright year
+1. **Navigation** — Fixed top bar with blur backdrop, shrinks on scroll; hamburger menu on mobile
+2. **Hero** — Full-viewport section with name (謝國瑋), subtitle, live clock, and decorative gradient card
+3. **Ticker** — High-contrast white horizontal bar scrolling keywords in a seamless loop
+4. **About** — Three feature cards (Passion, Vision, Craft) with hover effects and stat counters (∞, 24/7, 100%)
+5. **Contact** — Call-to-action section with gradient background glow and animated button
+6. **Footer** — Minimal footer with name and dynamic copyright year
 
 ---
 
@@ -84,9 +108,9 @@ L1/
 
 ## 🛠️ Technologies
 
-- **HTML5** — Semantic structure
-- **CSS3** — Custom properties, animations, grid, flexbox, backdrop-filter
-- **JavaScript (ES6)** — DOM manipulation, IntersectionObserver, requestAnimationFrame
+- **HTML5** — Semantic structure with `<nav>`, `<section>`, `<footer>`
+- **CSS3** — Custom properties, `clamp()`, `dvh`, grid, flexbox, `backdrop-filter`, keyframe animations, 5 media query breakpoints
+- **JavaScript (ES6)** — DOM manipulation, IntersectionObserver, event delegation, touch detection
 - **Google Fonts** — Archivo Black, Space Grotesk, Caveat
 
 ---
