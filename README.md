@@ -1,0 +1,96 @@
+# 謝國瑋 — Personal Portfolio Page
+
+A bold, neo-brutalist personal webpage inspired by the [Adelina template](https://builder.hostinger.com/templates?preview=adelina&hideRating=1) from Hostinger. Built with pure HTML, CSS, and JavaScript — no frameworks required.
+
+---
+
+## 🌐 Live Preview
+
+Open `index.html` in any modern browser to view the page.
+
+---
+
+## ✨ Features
+
+| Feature | Description |
+|---------|-------------|
+| 🎨 **Neo-Brutalist Design** | Dark charcoal background with vibrant neon purple accents |
+| 🕐 **Live Clock** | Real-time clock updating every second, displayed prominently in the hero section |
+| 🔤 **Bold Typography** | Archivo Black for headings, Space Grotesk for body, Caveat for script accents |
+| 🏷️ **Sticker Elements** | Floating badge-style labels ("HELLO!", "RIGHT NOW", "WELCOME") with animations |
+| 📜 **Scrolling Ticker** | Continuous horizontal ticker bar with name and keywords |
+| 🖱️ **Parallax Effect** | Mouse-tracking parallax on the hero section for an interactive feel |
+| 👁️ **Scroll Reveal** | Elements animate into view as the user scrolls down |
+| 📱 **Fully Responsive** | Adapts seamlessly to desktop, tablet, and mobile screens |
+| 🌫️ **Grain Texture** | Subtle film-grain overlay for a tactile, print-like aesthetic |
+| ⭐ **Spinning Stars** | Decorative star elements with continuous rotation animations |
+
+---
+
+## 📁 Project Structure
+
+```
+L1/
+├── index.html   # Main HTML structure (hero, ticker, about, contact, footer)
+├── style.css    # All styling — layout, colors, animations, responsive breakpoints
+├── script.js    # Live clock, scroll reveal, parallax, navbar effects, ticker loop
+└── README.md    # This file
+```
+
+---
+
+## 🎨 Design System
+
+### Color Palette
+
+| Color | Hex | Usage |
+|-------|-----|-------|
+| Dark Background | `#0e0e0e` | Page background |
+| Card Background | `#1a1a1a` | Card surfaces |
+| Purple Primary | `#a855f7` | Accents, stickers, highlights |
+| Purple Light | `#c084fc` | Gradients, script text |
+| Purple Deep | `#7c3aed` | Secondary accents |
+| White | `#ffffff` | Primary text |
+| White Muted | `#b0b0b0` | Secondary text |
+
+### Fonts (Google Fonts)
+
+- **Archivo Black** — Ultra-bold headings
+- **Space Grotesk** — Clean body text
+- **Caveat** — Handwritten script accents
+
+---
+
+## 🧩 Page Sections
+
+1. **Navigation** — Fixed top bar with blur backdrop, shrinks on scroll
+2. **Hero** — Full-viewport section with name (謝國瑋), subtitle, live clock, and decorative card
+3. **Ticker** — High-contrast white horizontal bar scrolling keywords
+4. **About** — Three feature cards (Passion, Vision, Craft) with hover effects and stat counters
+5. **Contact** — Call-to-action section with gradient background glow
+6. **Footer** — Minimal footer with name and copyright year
+
+---
+
+## 🚀 Getting Started
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/Moeta034/0225DICDRL.git
+   ```
+2. Open `index.html` in your browser — no build step needed.
+
+---
+
+## 🛠️ Technologies
+
+- **HTML5** — Semantic structure
+- **CSS3** — Custom properties, animations, grid, flexbox, backdrop-filter
+- **JavaScript (ES6)** — DOM manipulation, IntersectionObserver, requestAnimationFrame
+- **Google Fonts** — Archivo Black, Space Grotesk, Caveat
+
+---
+
+## 📝 License
+
+© 2026 謝國瑋. All rights reserved.
